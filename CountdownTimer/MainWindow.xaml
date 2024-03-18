@@ -1,0 +1,22 @@
+﻿<Window x:Class="CountdownTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CountdownTimer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="CountdownDisplay" HorizontalAlignment="Left" Margin="412,88,0,0" TextWrapping="Wrap" FontSize="40px" Text="" VerticalAlignment="Top" Height="63" Width="61"/>
+        <TextBox x:Name="CountdownInputTextBox" HorizontalAlignment="Left" Margin="354,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Height="23"/>
+        <Button x:Name="StartButton" Background="#218838" Content="Start" HorizontalAlignment="Left" Margin="268,245,0,0" VerticalAlignment="Top" Height="35" Width="98" Click="StartButton_Click"/>
+        <Button x:Name="StopButton" Background="#ee293c" Content="Stop" HorizontalAlignment="Left" Margin="412,245,0,0" VerticalAlignment="Top" Height="35" Width="101" Click="StopButton_Click"/>
+        <Button x:Name="ResetButton" Content="Reset" Background="#f3a867" HorizontalAlignment="Left" Margin="354,380,0,0" VerticalAlignment="Top" Height="29" Width="72" Click="ResetButton_Click"/>
+        <Button x:Name="PauseButton" Background="#ffd000" Content="Pause" HorizontalAlignment="Left" Margin="268,316,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="PauseButton_Click"/>
+        <Button x:Name="ContinueButton" Content="Continue" Background="#17a5bc" HorizontalAlignment="Left" Margin="412,317,0,0" VerticalAlignment="Top" Height="31" Width="101" Click="ContinueButton_Click"/>
+        <Label Content="Input Time(seconds)" HorizontalAlignment="Left" Margin="232,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="S" FontSize="40px" HorizontalAlignment="Left" Margin="482,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.097,0.518"/>
+
+    </Grid>
+</Window>
